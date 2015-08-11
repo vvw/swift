@@ -22,7 +22,7 @@
     webview = [[UIWebView alloc]init];
     webview.scalesPageToFit = YES;
     NSURLRequest *reques=[[NSURLRequest alloc] init];
-    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.xxx.com?clientType=iphone"]];
+    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.ksbao.com?clientType=iphone"]];
     [webview loadRequest:reques];
     self.view = webview;
 }
@@ -43,6 +43,14 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     NSLog(@"## webViewDidStartLoad");
+    if (self.hudView) {
+        assert(false);
+    }
+    self.hudView = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:self.hudView];
+    [self.view bringSubviewToFront:self.hudView];
+    self.hudView.labelText =NSLocalizedString(@"loading ...", nil);
+    [self.hudView show:YES];
 }
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
@@ -50,6 +58,10 @@
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     NSLog(@"## webViewDidFinishLoad");
+    if (self.hudView) {
+        [self.hudView removeFromSuperview];
+        self.hudView=nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
