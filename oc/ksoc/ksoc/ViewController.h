@@ -31,10 +31,10 @@
     [lab_averagePriceSingle setTextColor:[UIColor grayColor]];
     [lab_averagePriceSingle setBackgroundColor:[UIColor clearColor]];
     [lab_averagePriceSingle setFont:[UIFont boldSystemFontOfSize:18]];
-
     [btn setTag:1];
     //[btnContainer addSubview:btnImage];
     [btn addSubview:lab_averagePriceSingle];
+    [btn addTarget:nil action:@selector(btnDown) forControlEvents:UIControlEventTouchUpInside];
     [webview addSubview:btn];
     webview.scalesPageToFit = YES;
     NSURLRequest *reques=[[NSURLRequest alloc] init];
@@ -42,6 +42,15 @@
     [webview loadRequest:reques];
     self.view = webview;
 }
+
+-(void)btnDown {
+    NSLog(@"### button down");
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"### InPurchaseCtrler closed");
+    }];
+}
+
+
 -(void)viewWillAppear:(BOOL)animated
 {
     webview.delegate = self;
