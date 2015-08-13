@@ -22,7 +22,7 @@
     webview = [[UIWebView alloc]init];
     webview.scalesPageToFit = YES;
     NSURLRequest *reques=[[NSURLRequest alloc] init];
-    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.xxx.com?clientType=iphone"]];
+    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.ksbao.com?clientType=iphone"]];
     [webview loadRequest:reques];
     self.view = webview;
 }
@@ -44,22 +44,25 @@
             
             NSString *js_iOS=[self.webview stringByEvaluatingJavaScriptFromString:@"iOSfn();"];
             NSArray *arry=[js_iOS  componentsSeparatedByString:@"/"];
-            NSString *username=[arry objectAtIndex:0];
-            NSString *softname=[arry objectAtIndex:1];
+            NSString *UserID=[arry objectAtIndex:0];
+            NSString *AppEName=[arry objectAtIndex:1];
             NSString *appName=[arry objectAtIndex:2];
             
             NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
-            [userDefaults setObject:username forKey:@"UserID"];
-            [userDefaults setObject:softname forKey:@"AppEName"];
+            [userDefaults setObject:UserID forKey:@"UserID"];
+            [userDefaults setObject:AppEName forKey:@"AppEName"];
             [userDefaults setObject:appName forKey:@"AppName"];
             [userDefaults synchronize];
             
-            NSString *UserID =[[NSUserDefaults standardUserDefaults] stringForKey:@"UserID"];
+            NSString *usid =[[NSUserDefaults standardUserDefaults] stringForKey:@"UserID"];
             //[userDefaults]
             
-            NSLog(@"%@",appName);
+            NSLog(@"AppEName:%@ appName:%@ UserID:%@",AppEName, appName, UserID);
 
-            
+            InPurchaseCtrler *ctrler = [[InPurchaseCtrler alloc]init];
+            [self presentViewController:ctrler animated:YES completion:^{
+                NSLog(@"######## Switched to InPurchaseCtrler");
+            }];
         }
     }
 
