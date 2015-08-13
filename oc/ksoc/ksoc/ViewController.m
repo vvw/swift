@@ -22,7 +22,7 @@
     webview = [[UIWebView alloc]init];
     webview.scalesPageToFit = YES;
     NSURLRequest *reques=[[NSURLRequest alloc] init];
-    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.ksbao.com?clientType=iphone"]];
+    reques=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://new.xxx.com?clientType=iphone"]];
     [webview loadRequest:reques];
     self.view = webview;
 }
@@ -32,6 +32,38 @@
     
     NSString *absolutStr=request.URL.absoluteString;
     NSLog(@"### request.URL.absoluteString: %@", absolutStr);
+    
+    
+    NSString *prefixStr=@"ios://";
+    
+    if ([absolutStr hasPrefix:prefixStr]) {
+        NSString *urlkey=[absolutStr substringFromIndex:6];
+        NSArray *pareArray=[urlkey componentsSeparatedByString:@"/"];
+        NSString *action=[pareArray objectAtIndex:0];
+        if ([action isEqualToString:@"iOSiap"]) {
+            
+            NSString *js_iOS=[self.webview stringByEvaluatingJavaScriptFromString:@"iOSfn();"];
+            NSArray *arry=[js_iOS  componentsSeparatedByString:@"/"];
+            NSString *username=[arry objectAtIndex:0];
+            NSString *softname=[arry objectAtIndex:1];
+            NSString *appName=[arry objectAtIndex:2];
+            
+            NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:username forKey:@"UserID"];
+            [userDefaults setObject:softname forKey:@"AppEName"];
+            [userDefaults setObject:appName forKey:@"AppName"];
+            [userDefaults synchronize];
+            
+            NSString *UserID =[[NSUserDefaults standardUserDefaults] stringForKey:@"UserID"];
+            //[userDefaults]
+            
+            NSLog(@"%@",appName);
+
+            
+        }
+    }
+
+    
     return true;
 }
 
