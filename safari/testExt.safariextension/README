@@ -1,0 +1,141 @@
+
+Safari Extensions Development Guide
+
+About Safari Extensions
+
+You can add custom buttons to the Safari toolbar, create bars of your own, add contextual menu items, display content in bars or tabs, and inject scripts and style sheets into webpages. In Safari 5.1 and later, you can add menus and popovers to toolbar items.
+
+You Create Extensions Right in Safari
+You create extensions using Extension Builder, which is built into Safari 5.0 and later. Open Extension Builder, tell it to create an extension folder, drag your HTML, JavaScript, and CSS style sheets into the folder, fill out the fields in Extension Builder, and you’re ready to go.
+
+
+Global HTML page
+    永远不会显示，只做逻辑初始化。这里为safari 加按钮，菜单等。safari 启动，或扩展被启用时调用此页面。
+Content (HTML, CSS, JavaScript, media)
+
+Menu Items (labels, images)
+    扩展菜单
+Injected scripts
+    要注入的javascript
+Injected style sheets
+    要注入的CSS
+Icon image
+    扩展的图标
+
+Update Your Extension Automatically from the Web
+    safari 周期性的检查你提供的url 与本地版本比较看是否有更新，如果有就会提示用户自动更新
+
+
+To add a button to the toolbar, you need to be able to create an image with an alpha channel (transparency).
+    在工具栏上加按钮需要一张带alpha 通道的图片
+
+Extensions Overview
+
+SafariBrowserWindow, SafariBrowserTab, and SafariWebPageProxy representing, respectively, a window, a tab, and the webpage loaded in a tab.You rarely, if ever, use the actual class names in your code, however. Instead, your extension JavaScript uses theSafariNamespace
+
+safari.application.activeBrowserWindow returns the active instance of SafariBrowserWindow.
+safari.application.activeBrowserWindow.activeTab returns an instance of SafariBrowserTab.
+safari.application.activeBrowserWindow.activeTab.page returns an instance of SafariWebPageProxy.
+As usual in JavaScript, there is more than one way to address a particular object and the chain of properties goes both ways—a browser window has a tabs property representing its tabs, for example, and each tab has a browserWindow property representing its parent window.
+
+
+safari.application.openBrowserWindow();
+    打开新窗口
+
+                                        var bw = "body { color:black !important; background:white !important }" ;
+                                        safari.extension.addContentStyleSheet(bw);
+    在你自已的扩展页面上注入css
+
+
+Command events
+    命令事件在用户点了某个扩展程序或是它的菜单项时触发
+  safari.application.addEventListener("command", myCmdHandler, false);
+
+Validate events
+    是打开新窗口或加载页面之类的重要事件，优先于命令和菜单显示事件
+
+Message events
+    发消息 dispatchMessage(messageName, data)
+    监听消息 addEventListener("message", functionName, false)
+    此消息你在任何地方都能收
+
+Proxies
+     SafariContentWebPage / SafariWebPageProxy
+   SafariBrowserTab /SafariContentBrowserTabProxy
+     跨程序时需要
+How to Create Extensions
+
+    直接在safari 里写扩展，safari 5.0 以为支持。
+    启用开发菜单 safari ->preference ->advance ->show develop menmu in menmu bar
+    
+    你的扩展所有内容会放在一个文件夹里面，然后变成一个压缩文件并以.safariextz为扩展名。和一个plist文件告诉safari 你的扩展如何组织，是做什么的。
+
+    Develop ->Show Extension Builder ->点加号
+        －>New Extension ->加入html, js, css 等
+
+Popover Files
+    是另一个html，它会以弹窗的形式出现
+
+End Scripts
+    onload 事件发生的时侯执行
+
+Start Scripts
+    页面解析之前执行
+        你想要卡擦掉某些页面元素的时侯就用它了
+
+ URL patterns
+    黑名单是你不想注入的页面，白名单是你要拿它开刀的页面
+Security
+
+不用innerHTML document.write
+用innerText appendChild
+
+Private Browsing
+    就是chrome 的隐身模式，不留痕迹的。
+    safari 6.0 可以用查看是否处于隐身模式
+        safari.privateBrowsing.enabled
+    or by listening for activate and deactivate events that have the SafariPrivateBrowsing object as their targets.
+
+Using Extension Builder
+
+Icon.png or Icon-64.png
+
+Display Version
+    显示给用户看的版本号
+Bundle Version
+    内部版本号  1 or 4.1.1 用于检查更新，必需
+
+Extension Website Access
+    选all 可以访问任意外部网站，否则就指定有限的几个
+
+黑名单和白名单url pattern
+http://*/*所有 URLs.
+http://*.apple.com/*
+http://developer.apple.com/*
+https://secure.A_BankForExample.com/accounts/*
+http://www.example.com/thepath/thepage.html一个页面
+Building a Simple Extension
+
+    ​目标：扩展界的hello word
+helloworld.html
+<!DOCTYPE html>    
+<html>    
+<head>    
+<title>Hello World</title>    
+</head>    
+<body>Hello World!</body>    
+</html>    
+
+把helloworld.html 放在你的扩展文件夹中
+
+Click New Bar in Extension Builder, enter a label such as Hello World, and choose helloworld.htmlfrom the pop-up menu.
+Click the Install button. Extension Builder creates a compressed folder with the extension .safariextz. This is your extension package. The package is installed, and a new extension bar is added to your browser window that displays “Hello World,”
+
+
+显示在扩展应用条上的一个程序
+
+
+要建的是Toobar Item和上面教程讲的不一样
+Toobar Item的Image必须是一个8bit的16px * 16px透明背景的黑白png图像（繁琐的要求）
+
+
