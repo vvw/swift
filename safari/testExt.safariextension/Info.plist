@@ -16,17 +16,15 @@
 	<string>1</string>
 	<key>Chrome</key>
 	<dict>
-		<key>Toolbar Items</key>
+		<key>Bars</key>
 		<array>
 			<dict>
+				<key>Filename</key>
+				<string>btn.html</string>
 				<key>Identifier</key>
-				<string>button</string>
-				<key>Image</key>
-				<string>Icon256.png</string>
-				<key>Include By Default</key>
-				<true/>
+				<string>bttttnnnn</string>
 				<key>Label</key>
-				<string>hello</string>
+				<string>hi,,,</string>
 			</dict>
 		</array>
 	</dict>

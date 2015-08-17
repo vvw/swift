@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player Extension Bar</title>
+    <script type="text/javascript">
+    function playIt() {
+       document.getElementById("music").play();
+        }
+    function pauseIt() {
+       document.getElementById("music").pause();
+        }
+    </script>
+</head>
+<body>
+My Music:
+&nbsp;&nbsp;
+<input type=button value=">" onclick="playIt()"  title="Play">
+&nbsp;&nbsp;
+<input type=button value="||" onclick="pauseIt()" title="Pause">
+<audio id="music" src="./AKB48-RIVER.mp3"></audio>
+ </body>
+</html>
