@@ -4,7 +4,7 @@ var element = document.createElement("p");
 element.id = "status";
 element.style.cssText = "float:right; color:red";
 element.textContent = "Waiting...";
-theBody.insertBefore(element, theBody.lastChild);
+theBody.insertBefore(element, theBody.firstChild);
 
 function replyToMessage(aMessageEvent) {
 	if (aMessageEvent.name === "hey") {

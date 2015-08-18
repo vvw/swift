@@ -39,13 +39,25 @@
             document.getElementById('music').pause();
         })()
     " title="Pause">
+    <input type=button value="doc" onclick="
+        (function (){
+            var newTab=safari.self.browserWindow.openTab();
+            newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide';
+        })()
+    " title="guide">&nbsp;&nbsp;
+    <input type=button value="nhk" onclick="
+        (function (){
+            var newTab=safari.self.browserWindow.openTab();
+            newTab.url='http://www.nhk.or.jp';
+        })()
+    " title="nhk">&nbsp;&nbsp;
     <input type=button value="newtab" onclick="
         (function (){
             var newTab=safari.self.browserWindow.openTab();
             newTab.url='http://localhost:8888';
 
         })()
-    " title="guide">&nbsp;&nbsp;
+    " title="tab">&nbsp;&nbsp;
     <audio id="music" src="./AKB48-RIVER.mp3"></audio>
     <input type="button" value="Send" onclick="sendMessage()">&nbsp;&nbsp;
     <span id="textField">...waiting... </span>
