@@ -4,36 +4,36 @@
 <head>
     <title>Music Player Extension Bar</title>
     <script>
-    	function playBtn() {
-    		var input = document.createElement('input');
-    		input.type = 'button';
-    		input.title = 'play';
-    		input.value = '>';
-    		input.onclick = function (){
-				document.getElementById(" music ").play();
-			}
-    	}
+        function playBtn() {
+            var input = document.createElement('input');
+            input.type = 'button';
+            input.title = 'play';
+            input.value = '>';
+            input.onclick = function (){
+                document.getElementById(" music ").play();
+            }
+        }
     </script>
 </head>
 
 <body>
     My Music: &nbsp;&nbsp;
     <input type=button value=">" onclick="
-    	(function (){
-			document.getElementById(" music ").play();
-		})()
+        (function (){
+            document.getElementById(" music ").play();
+        })()
     " title="Play"> &nbsp;&nbsp;
     <input type=button value="||" onclick="
-    	(function (){
-			document.getElementById(" music ").pause();
-		})()
+        (function (){
+            document.getElementById(" music ").pause();
+        })()
     " title="Pause">
     <input type=button value="newtab" onclick="
-    	(function (){
-			var newTab=safari.self.browserWindow.openTab();
-        	newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide';
+        (function (){
+            var newTab=safari.self.browserWindow.openTab();
+            newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide';
 
-		})()
+        })()
     " title="guide">
     <audio id="music" src="./AKB48-RIVER.mp3"></audio>
 </body>
@@ -66,3 +66,9 @@
 </body>
 
 </html>
+
+
+
+
+
+
