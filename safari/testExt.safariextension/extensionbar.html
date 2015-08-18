@@ -1,18 +1,29 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Music Player Extension Bar</title>
     <script>
-        function playBtn() {
-            var input = document.createElement('input');
-            input.type = 'button';
-            input.title = 'play';
-            input.value = '>';
-            input.onclick = function (){
-                document.getElementById(" music ").play();
-            }
+    function playBtn() {
+        var input = document.createElement('input');
+        input.type = 'button';
+        input.title = 'play';
+        input.value = '>';
+        input.onclick = function() {
+            document.getElementById(" music ").play();
         }
+    }
+    </script>
+    <script>
+    function sendMessage() {
+        document.getElementById("textField").innerHTML = "Sending message...";
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("hey", "there");
+    }
+    function respondToMessage(messageEvent) {
+        if (messageEvent.name === "gotIt")
+            document.getElementById("textField").innerHTML = messageEvent.message;
+    }
+    safari.self.browserWindow.addEventListener("message", respondToMessage, false);
     </script>
 </head>
 
@@ -20,28 +31,32 @@
     My Music: &nbsp;&nbsp;
     <input type=button value=">" onclick="
         (function (){
-            document.getElementById(" music ").play();
+            document.getElementById('music').play();
         })()
     " title="Play"> &nbsp;&nbsp;
     <input type=button value="||" onclick="
         (function (){
-            document.getElementById(" music ").pause();
+            document.getElementById('music').pause();
         })()
     " title="Pause">
     <input type=button value="newtab" onclick="
         (function (){
             var newTab=safari.self.browserWindow.openTab();
-            newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide';
+            newTab.url='http://localhost:8888';
 
         })()
-    " title="guide">
+    " title="guide">&nbsp;&nbsp;
     <audio id="music" src="./AKB48-RIVER.mp3"></audio>
+    <input type="button" value="Send" onclick="sendMessage()">&nbsp;&nbsp;
+    <span id="textField">...waiting... </span>
 </body>
 
 </html>
 
- -->
-<!DOCTYPE HTML>
+            <!-- newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide'; -->
+
+
+<!-- <!DOCTYPE HTML>
 <html>
 
 <head>
@@ -65,10 +80,4 @@
     <span id="textField">...waiting... </span>
 </body>
 
-</html>
-
-
-
-
-
-
+</html> -->

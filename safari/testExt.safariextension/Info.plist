@@ -31,7 +31,12 @@
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
-		<dict/>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>Injected.js</string>
+			</array>
+		</dict>
 	</dict>
 	<key>DeveloperIdentifier</key>
 	<string>A3CWPWN79Q</string>
