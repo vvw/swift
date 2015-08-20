@@ -54,7 +54,8 @@
     <input type=button value="newtab" onclick="
         (function (){
             var newTab=safari.self.browserWindow.openTab();
-            newTab.url='http://localhost:8888';
+            //newTab.url= safari.extension.baseURI + 'hi.html'  // local html message not receive ? why?
+            newTab.url='http://localhost:8888';  // 8888 is a nodejs lisoning.
 
         })()
     " title="tab">&nbsp;&nbsp;
@@ -64,6 +65,8 @@
 </body>
 
 </html>
+
+            <!-- newTab.url='http://localhost:8888'; -->
 
             <!-- newTab.url='https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide'; -->
 
