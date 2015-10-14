@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF96A9F01BCB549F00A4182B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96A9EF1BCB549F00A4182B /* AppDelegate.swift */; };
+		EF96A9F21BCB549F00A4182B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96A9F11BCB549F00A4182B /* ViewController.swift */; };
+		EF96A9F41BCB549F00A4182B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF96A9F31BCB549F00A4182B /* Images.xcassets */; };
+		EF96A9F71BCB549F00A4182B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96A9F51BCB549F00A4182B /* Main.storyboard */; };
+		EF96AA031BCB54A000A4182B /* similarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96AA021BCB54A000A4182B /* similarTests.swift */; };
+		EF96AA0E1BCB552500A4182B /* similar.c in Sources */ = {isa = PBXBuildFile; fileRef = EF96AA0D1BCB552500A4182B /* similar.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF96A9FD1BCB54A000A4182B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF96A9E21BCB549F00A4182B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF96A9E91BCB549F00A4182B;
+			remoteInfo = similar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF96A9EA1BCB549F00A4182B /* similar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = similar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF96A9EE1BCB549F00A4182B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF96A9EF1BCB549F00A4182B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF96A9F11BCB549F00A4182B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF96A9F31BCB549F00A4182B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF96A9F61BCB549F00A4182B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF96A9FC1BCB54A000A4182B /* similarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = similarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF96AA011BCB54A000A4182B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF96AA021BCB54A000A4182B /* similarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = similarTests.swift; sourceTree = "<group>"; };
+		EF96AA0C1BCB552400A4182B /* similar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "similar-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF96AA0D1BCB552500A4182B /* similar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = similar.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF96A9E71BCB549F00A4182B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF96A9F91BCB54A000A4182B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF96A9E11BCB549F00A4182B = {
+			isa = PBXGroup;
+			children = (
+				EF96A9EC1BCB549F00A4182B /* similar */,
+				EF96A9FF1BCB54A000A4182B /* similarTests */,
+				EF96A9EB1BCB549F00A4182B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF96A9EB1BCB549F00A4182B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF96A9EA1BCB549F00A4182B /* similar.app */,
+				EF96A9FC1BCB54A000A4182B /* similarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF96A9EC1BCB549F00A4182B /* similar */ = {
+			isa = PBXGroup;
+			children = (
+				EF96A9EF1BCB549F00A4182B /* AppDelegate.swift */,
+				EF96A9F11BCB549F00A4182B /* ViewController.swift */,
+				EF96A9F31BCB549F00A4182B /* Images.xcassets */,
+				EF96A9F51BCB549F00A4182B /* Main.storyboard */,
+				EF96A9ED1BCB549F00A4182B /* Supporting Files */,
+				EF96AA0D1BCB552500A4182B /* similar.c */,
+				EF96AA0C1BCB552400A4182B /* similar-Bridging-Header.h */,
+			);
+			path = similar;
+			sourceTree = "<group>";
+		};
+		EF96A9ED1BCB549F00A4182B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF96A9EE1BCB549F00A4182B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF96A9FF1BCB54A000A4182B /* similarTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF96AA021BCB54A000A4182B /* similarTests.swift */,
+				EF96AA001BCB54A000A4182B /* Supporting Files */,
+			);
+			path = similarTests;
+			sourceTree = "<group>";
+		};
+		EF96AA001BCB54A000A4182B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF96AA011BCB54A000A4182B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF96A9E91BCB549F00A4182B /* similar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF96AA061BCB54A000A4182B /* Build configuration list for PBXNativeTarget "similar" */;
+			buildPhases = (
+				EF96A9E61BCB549F00A4182B /* Sources */,
+				EF96A9E71BCB549F00A4182B /* Frameworks */,
+				EF96A9E81BCB549F00A4182B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = similar;
+			productName = similar;
+			productReference = EF96A9EA1BCB549F00A4182B /* similar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF96A9FB1BCB54A000A4182B /* similarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF96AA091BCB54A000A4182B /* Build configuration list for PBXNativeTarget "similarTests" */;
+			buildPhases = (
+				EF96A9F81BCB54A000A4182B /* Sources */,
+				EF96A9F91BCB54A000A4182B /* Frameworks */,
+				EF96A9FA1BCB54A000A4182B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF96A9FE1BCB54A000A4182B /* PBXTargetDependency */,
+			);
+			name = similarTests;
+			productName = similarTests;
+			productReference = EF96A9FC1BCB54A000A4182B /* similarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF96A9E21BCB549F00A4182B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = vvw;
+				TargetAttributes = {
+					EF96A9E91BCB549F00A4182B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EF96A9FB1BCB54A000A4182B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EF96A9E91BCB549F00A4182B;
+					};
+				};
+			};
+			buildConfigurationList = EF96A9E51BCB549F00A4182B /* Build configuration list for PBXProject "similar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF96A9E11BCB549F00A4182B;
+			productRefGroup = EF96A9EB1BCB549F00A4182B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF96A9E91BCB549F00A4182B /* similar */,
+				EF96A9FB1BCB54A000A4182B /* similarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF96A9E81BCB549F00A4182B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF96A9F41BCB549F00A4182B /* Images.xcassets in Resources */,
+				EF96A9F71BCB549F00A4182B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF96A9FA1BCB54A000A4182B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF96A9E61BCB549F00A4182B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF96A9F21BCB549F00A4182B /* ViewController.swift in Sources */,
+				EF96AA0E1BCB552500A4182B /* similar.c in Sources */,
+				EF96A9F01BCB549F00A4182B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF96A9F81BCB54A000A4182B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF96AA031BCB54A000A4182B /* similarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF96A9FE1BCB54A000A4182B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF96A9E91BCB549F00A4182B /* similar */;
+			targetProxy = EF96A9FD1BCB54A000A4182B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF96A9F51BCB549F00A4182B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF96A9F61BCB549F00A4182B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF96AA041BCB54A000A4182B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF96AA051BCB54A000A4182B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EF96AA071BCB54A000A4182B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = similar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "similar/similar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF96AA081BCB54A000A4182B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = similar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "similar/similar-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EF96AA0A1BCB54A000A4182B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = similarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/similar.app/Contents/MacOS/similar";
+			};
+			name = Debug;
+		};
+		EF96AA0B1BCB54A000A4182B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = similarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/similar.app/Contents/MacOS/similar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF96A9E51BCB549F00A4182B /* Build configuration list for PBXProject "similar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF96AA041BCB54A000A4182B /* Debug */,
+				EF96AA051BCB54A000A4182B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF96AA061BCB54A000A4182B /* Build configuration list for PBXNativeTarget "similar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF96AA071BCB54A000A4182B /* Debug */,
+				EF96AA081BCB54A000A4182B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF96AA091BCB54A000A4182B /* Build configuration list for PBXNativeTarget "similarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF96AA0A1BCB54A000A4182B /* Debug */,
+				EF96AA0B1BCB54A000A4182B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF96A9E21BCB549F00A4182B /* Project object */;
+}
