@@ -13,6 +13,7 @@
 		EF96A9F71BCB549F00A4182B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96A9F51BCB549F00A4182B /* Main.storyboard */; };
 		EF96AA031BCB54A000A4182B /* similarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96AA021BCB54A000A4182B /* similarTests.swift */; };
 		EF96AA0E1BCB552500A4182B /* similar.c in Sources */ = {isa = PBXBuildFile; fileRef = EF96AA0D1BCB552500A4182B /* similar.c */; };
+		EFB2621A1BCE4043000F533C /* jieba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFB262191BCE4043000F533C /* jieba.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		EF96AA021BCB54A000A4182B /* similarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = similarTests.swift; sourceTree = "<group>"; };
 		EF96AA0C1BCB552400A4182B /* similar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "similar-Bridging-Header.h"; sourceTree = "<group>"; };
 		EF96AA0D1BCB552500A4182B /* similar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = similar.c; sourceTree = "<group>"; };
+		EFB262191BCE4043000F533C /* jieba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jieba.cpp; path = libcppjieba/jieba.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		EF96A9EC1BCB549F00A4182B /* similar */ = {
 			isa = PBXGroup;
 			children = (
+				EFB262191BCE4043000F533C /* jieba.cpp */,
 				EF96A9EF1BCB549F00A4182B /* AppDelegate.swift */,
 				EF96A9F11BCB549F00A4182B /* ViewController.swift */,
 				EF96A9F31BCB549F00A4182B /* Images.xcassets */,
@@ -158,6 +161,7 @@
 		EF96A9E21BCB549F00A4182B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = vvw;
 				TargetAttributes = {
@@ -214,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF96A9F21BCB549F00A4182B /* ViewController.swift in Sources */,
+				EFB2621A1BCE4043000F533C /* jieba.cpp in Sources */,
 				EF96AA0E1BCB552500A4182B /* similar.c in Sources */,
 				EF96A9F01BCB549F00A4182B /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +416,7 @@
 				EF96AA081BCB54A000A4182B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF96AA091BCB54A000A4182B /* Build configuration list for PBXNativeTarget "similarTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +425,7 @@
 				EF96AA0B1BCB54A000A4182B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
