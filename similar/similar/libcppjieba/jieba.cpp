@@ -12,7 +12,7 @@
 using namespace CppJieba;
 
 ///Users/vvw/Desktop/dict/
-extern "C" char* testjieba() {
+extern "C" char* testjieba(char *str) {
     CppJieba::Application app("/Users/vvw/Desktop/dict/jieba.dict.utf8",
                               "/Users/vvw/Desktop/dict/hmm_model.utf8",
                               "/Users/vvw/Desktop/dict/user.dict.utf8",
@@ -20,8 +20,8 @@ extern "C" char* testjieba() {
                               "/Users/vvw/Desktop/dict/stop_words.utf8");
     vector<string> words;
     string result;
-    string s = "我是拖拉机学院手扶拖拉机专业的。不用多久，我就会升职加薪，当上CEO，走上人生巅峰。";
-    //string s = "我";
+    string s(str);
+    //string s = "我是拖拉机学院手扶拖拉机专业的。不用多久，我就会升职加薪，当上CEO，走上人生巅峰。";
 
     string results;
     const char *p = 0;
