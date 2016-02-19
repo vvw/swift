@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7979B641C71B04D00CB1218 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7979B631C71B04D00CB1218 /* popup.swift */; };
+		B7979B691C71B06600CB1218 /* EssBitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = B7979B661C71B06600CB1218 /* EssBitmap.c */; };
+		B7979B6A1C71B06600CB1218 /* ExamSheetScannerCore.c in Sources */ = {isa = PBXBuildFile; fileRef = B7979B671C71B06600CB1218 /* ExamSheetScannerCore.c */; };
+		B7979B6B1C71B06600CB1218 /* ExamSheetScannerUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B7979B681C71B06600CB1218 /* ExamSheetScannerUtil.c */; };
+		B79981841C75C50000949421 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79981831C75C50000949421 /* TaskQueue.swift */; };
+		F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */; };
+		F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AB21A21DD6D00E2F44E /* ViewController.swift */; };
+		F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB41A21DD6D00E2F44E /* Main.storyboard */; };
+		F4973AB81A21DD6D00E2F44E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB71A21DD6D00E2F44E /* Images.xcassets */; };
+		F4973ABB1A21DD6D00E2F44E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4973AB91A21DD6D00E2F44E /* LaunchScreen.xib */; };
+		F4973AC71A21DD6E00E2F44E /* QRReaderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4973AC61A21DD6E00E2F44E /* QRReaderDemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4973AC11A21DD6E00E2F44E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4973AA31A21DD6D00E2F44E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4973AAA1A21DD6D00E2F44E;
+			remoteInfo = QRReaderDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7979B631C71B04D00CB1218 /* popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popup.swift; sourceTree = "<group>"; };
+		B7979B651C71B06500CB1218 /* QRReaderDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRReaderDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7979B661C71B06600CB1218 /* EssBitmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = EssBitmap.c; path = jni/EssBitmap.c; sourceTree = "<group>"; };
+		B7979B671C71B06600CB1218 /* ExamSheetScannerCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ExamSheetScannerCore.c; path = jni/ExamSheetScannerCore.c; sourceTree = "<group>"; };
+		B7979B681C71B06600CB1218 /* ExamSheetScannerUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ExamSheetScannerUtil.c; path = jni/ExamSheetScannerUtil.c; sourceTree = "<group>"; };
+		B79981831C75C50000949421 /* TaskQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
+		F4973AAB1A21DD6D00E2F44E /* timerCardReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timerCardReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4973AAF1A21DD6D00E2F44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4973AB21A21DD6D00E2F44E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4973AB51A21DD6D00E2F44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4973AB71A21DD6D00E2F44E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4973ABA1A21DD6D00E2F44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F4973AC01A21DD6E00E2F44E /* timerCardReader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerCardReader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4973AC51A21DD6E00E2F44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4973AC61A21DD6E00E2F44E /* QRReaderDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderDemoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4973AA81A21DD6D00E2F44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4973ABD1A21DD6E00E2F44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4973AA21A21DD6D00E2F44E = {
+			isa = PBXGroup;
+			children = (
+				F4973AAD1A21DD6D00E2F44E /* timerCardReader */,
+				F4973AC31A21DD6E00E2F44E /* timerCardReaderTests */,
+				F4973AAC1A21DD6D00E2F44E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4973AAC1A21DD6D00E2F44E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4973AAB1A21DD6D00E2F44E /* timerCardReader.app */,
+				F4973AC01A21DD6E00E2F44E /* timerCardReader.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4973AAD1A21DD6D00E2F44E /* timerCardReader */ = {
+			isa = PBXGroup;
+			children = (
+				F4973AB01A21DD6D00E2F44E /* AppDelegate.swift */,
+				F4973AB21A21DD6D00E2F44E /* ViewController.swift */,
+				B7979B661C71B06600CB1218 /* EssBitmap.c */,
+				B79981831C75C50000949421 /* TaskQueue.swift */,
+				B7979B671C71B06600CB1218 /* ExamSheetScannerCore.c */,
+				B7979B681C71B06600CB1218 /* ExamSheetScannerUtil.c */,
+				B7979B631C71B04D00CB1218 /* popup.swift */,
+				F4973AB41A21DD6D00E2F44E /* Main.storyboard */,
+				F4973AB71A21DD6D00E2F44E /* Images.xcassets */,
+				F4973AB91A21DD6D00E2F44E /* LaunchScreen.xib */,
+				F4973AAE1A21DD6D00E2F44E /* Supporting Files */,
+				B7979B651C71B06500CB1218 /* QRReaderDemo-Bridging-Header.h */,
+			);
+			name = timerCardReader;
+			path = QRReaderDemo;
+			sourceTree = "<group>";
+		};
+		F4973AAE1A21DD6D00E2F44E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4973AAF1A21DD6D00E2F44E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4973AC31A21DD6E00E2F44E /* timerCardReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4973AC61A21DD6E00E2F44E /* QRReaderDemoTests.swift */,
+				F4973AC41A21DD6E00E2F44E /* Supporting Files */,
+			);
+			name = timerCardReaderTests;
+			path = QRReaderDemoTests;
+			sourceTree = "<group>";
+		};
+		F4973AC41A21DD6E00E2F44E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4973AC51A21DD6E00E2F44E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4973AAA1A21DD6D00E2F44E /* timerCardReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4973ACA1A21DD6E00E2F44E /* Build configuration list for PBXNativeTarget "timerCardReader" */;
+			buildPhases = (
+				F4973AA71A21DD6D00E2F44E /* Sources */,
+				F4973AA81A21DD6D00E2F44E /* Frameworks */,
+				F4973AA91A21DD6D00E2F44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timerCardReader;
+			productName = QRReaderDemo;
+			productReference = F4973AAB1A21DD6D00E2F44E /* timerCardReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4973ABF1A21DD6E00E2F44E /* timerCardReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4973ACD1A21DD6E00E2F44E /* Build configuration list for PBXNativeTarget "timerCardReaderTests" */;
+			buildPhases = (
+				F4973ABC1A21DD6E00E2F44E /* Sources */,
+				F4973ABD1A21DD6E00E2F44E /* Frameworks */,
+				F4973ABE1A21DD6E00E2F44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4973AC21A21DD6E00E2F44E /* PBXTargetDependency */,
+			);
+			name = timerCardReaderTests;
+			productName = QRReaderDemoTests;
+			productReference = F4973AC01A21DD6E00E2F44E /* timerCardReader.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4973AA31A21DD6D00E2F44E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = AppCoda;
+				TargetAttributes = {
+					F4973AAA1A21DD6D00E2F44E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F4973ABF1A21DD6E00E2F44E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F4973AAA1A21DD6D00E2F44E;
+					};
+				};
+			};
+			buildConfigurationList = F4973AA61A21DD6D00E2F44E /* Build configuration list for PBXProject "timerCardReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4973AA21A21DD6D00E2F44E;
+			productRefGroup = F4973AAC1A21DD6D00E2F44E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4973AAA1A21DD6D00E2F44E /* timerCardReader */,
+				F4973ABF1A21DD6E00E2F44E /* timerCardReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4973AA91A21DD6D00E2F44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4973AB61A21DD6D00E2F44E /* Main.storyboard in Resources */,
+				F4973ABB1A21DD6D00E2F44E /* LaunchScreen.xib in Resources */,
+				F4973AB81A21DD6D00E2F44E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4973ABE1A21DD6E00E2F44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4973AA71A21DD6D00E2F44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7979B691C71B06600CB1218 /* EssBitmap.c in Sources */,
+				B7979B6A1C71B06600CB1218 /* ExamSheetScannerCore.c in Sources */,
+				F4973AB31A21DD6D00E2F44E /* ViewController.swift in Sources */,
+				B79981841C75C50000949421 /* TaskQueue.swift in Sources */,
+				B7979B641C71B04D00CB1218 /* popup.swift in Sources */,
+				F4973AB11A21DD6D00E2F44E /* AppDelegate.swift in Sources */,
+				B7979B6B1C71B06600CB1218 /* ExamSheetScannerUtil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4973ABC1A21DD6E00E2F44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4973AC71A21DD6E00E2F44E /* QRReaderDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4973AC21A21DD6E00E2F44E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4973AAA1A21DD6D00E2F44E /* timerCardReader */;
+			targetProxy = F4973AC11A21DD6E00E2F44E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4973AB41A21DD6D00E2F44E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4973AB51A21DD6D00E2F44E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4973AB91A21DD6D00E2F44E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4973ABA1A21DD6D00E2F44E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4973AC81A21DD6E00E2F44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4973AC91A21DD6E00E2F44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4973ACB1A21DD6E00E2F44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = QRReaderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = timerCardReader;
+				SWIFT_OBJC_BRIDGING_HEADER = "QRReaderDemo/QRReaderDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4973ACC1A21DD6E00E2F44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = QRReaderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = timerCardReader;
+				SWIFT_OBJC_BRIDGING_HEADER = "QRReaderDemo/QRReaderDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F4973ACE1A21DD6E00E2F44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRReaderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = timerCardReader;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timerCardReader.app/timerCardReader";
+			};
+			name = Debug;
+		};
+		F4973ACF1A21DD6E00E2F44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRReaderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = timerCardReader;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timerCardReader.app/timerCardReader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4973AA61A21DD6D00E2F44E /* Build configuration list for PBXProject "timerCardReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4973AC81A21DD6E00E2F44E /* Debug */,
+				F4973AC91A21DD6E00E2F44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4973ACA1A21DD6E00E2F44E /* Build configuration list for PBXNativeTarget "timerCardReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4973ACB1A21DD6E00E2F44E /* Debug */,
+				F4973ACC1A21DD6E00E2F44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4973ACD1A21DD6E00E2F44E /* Build configuration list for PBXNativeTarget "timerCardReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4973ACE1A21DD6E00E2F44E /* Debug */,
+				F4973ACF1A21DD6E00E2F44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4973AA31A21DD6D00E2F44E /* Project object */;
+}
